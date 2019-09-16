@@ -47,7 +47,7 @@ summary:focus {
   color: #fc0; }
 
 .blue-dark {
-  color: #003d8b; }
+  color: #2ebc4f; }
 
 em {
   text-decoration: underline; }
@@ -83,7 +83,7 @@ em {
   font-weight: 400; }
 
 a, .link {
-  color: #48f;
+  color: #2ebc4f;
   text-decoration: underline; }
 
 a:hover, .link:hover {
@@ -126,7 +126,7 @@ footer {
       padding: 16px; } }
 
 .blue-gradient {
-  background: linear-gradient(#003d8b, #48f); }
+  background: linear-gradient(#2ebc4f, #1f7a34); }
 
 .grey-section {
   background: #e6e5e6; }
@@ -135,21 +135,21 @@ input, textarea {
   padding: 8px; }
 
 button {
-  background-color: #2ebc4f;
-  color: white;
+  background-color: #fc0;
+  color: black;
   font-weight: 500;
   padding: 8px;
-  border: 1px solid #2ebc4f;
+  border: 1px solid #fc0;
   border-radius: 4px; }
 
 button:hover {
-  box-shadow: 0 0 0 0.2em rgba(40, 167, 69, 0.3);
-  background-color: #28a746;
-  border-color: #28a746; }
+  box-shadow: 0 0 0 0.2em rgba(230, 227, 55, 0.3);
+  background-color: #fd0;
+  border-color: #fd0; }
 
 .blurb h3, summary {
   margin-bottom: 16px;
-  color: #48f;
+  color: #28a746;
   font-size: 20px; }
   @media screen and (min-width: 30em) {
     .blurb h3, summary {

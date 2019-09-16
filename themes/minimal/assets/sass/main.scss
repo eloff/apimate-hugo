@@ -48,8 +48,9 @@ summary:focus {
 // Variables
 
 // Colors
+$yellow-light: #fd0;
 $yellow: #fc0;
-$blue-light: #48f;
+$blue-light: #00f;
 $blue-dark: #003d8b;
 $green-light: #2ebc4f;
 $green-dark:	#28a746;
@@ -90,7 +91,7 @@ $footer-height: 300px;
 	color: $yellow;
 }
 .blue-dark {
-	color: $blue-dark;
+	color: $green-light;
 }
 em {
 	text-decoration: underline;
@@ -126,7 +127,7 @@ em {
 	font-weight: 400;
 }
 a, .link {
-	color: $blue-light;
+	color: $green-light;
 	text-decoration: underline;	
 }
 a:hover, .link:hover {
@@ -170,7 +171,8 @@ footer {
 	}
 }
 .blue-gradient {
-	background: linear-gradient($blue-dark, $blue-light);
+	background: linear-gradient(
+		$green-light, #1f7a34);
 }
 .grey-section {
 	background: $grey-light;
@@ -182,22 +184,22 @@ input, textarea {
 	padding: 8px;
 }
 button {
-	background-color: $green-light;
-	color: white;
+	background-color: $yellow;
+	color: black;
 	font-weight: 500;
 	padding: 8px;
-	border: 1px solid $green-light;
+	border: 1px solid $yellow;
 	border-radius: 4px;
 }
 button:hover {
-	box-shadow:0 0 0 0.2em rgba(40,167,69,.3);
-	background-color: $green-dark;
-	border-color: $green-dark;
+	box-shadow:0 0 0 0.2em rgba(230, 227, 55, 0.3);
+	background-color: $yellow-light;
+	border-color: $yellow-light;
 }
 // Blurb
 .blurb h3, summary {
 	margin-bottom: 16px;
-	color: $blue-light;
+	color: $green-dark;
 	font-size: 20px;
 	@include not-small {
 		font-size: 24px;	
