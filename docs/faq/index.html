@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Mate - FAQ</title>
+    
+    <link rel="stylesheet" href="/sass/main.css">
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1381372,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-142880390-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+	<body>
+		<div class="page">
+			<header>
+	<div class="content">
+		<div class="flex flex-column flex-row-ns justify-between-ns items-center">
+			<div class="">
+				<h1 class="logo b tc">
+	<a title="Home" href="/">
+		<img alt="Secure Database" src="/images/logo-icon.png" width="64" height="64" />
+		<span class="yellow">API</span>
+		<span class="blue-dark">Mate</span>
+	</a>
+</h1>
+			</div>
+			<div class="mt3 mt0-ns">
+				<nav class="w-60">
+	<ul class="menu f3 flex">
+		
+			<li class="ml1 ml2-ns">
+				
+					<a title="Home" href="/">Home</a>
+				
+			</li>
+		
+			<li class="ml1 ml2-ns">
+				
+					<span class="current">FAQ</span>
+				
+			</li>
+		
+			<li class="ml1 ml2-ns">
+				
+					<a title="Contact Us" href="#contact">Contact</a>
+				
+			</li>
+		
+	</ul>
+</nav>
+			</div>
+		</div>
+	</div>
+	<section class="grey-section">
+	<div id="yc" class="tc pa2">
+		<h3 class="pb2 f3">Welcome YCombinator Parter!</h3>
+		<span>Thanks for checking out my website. Please be aware the content here is describing the first couple MVP versions, which are only building up the supporting features for the core product. It will take a lot of creativity to imagine how this could grow into a billion dollar company in a short timeframe.</span>
+	</div>
+</section>
+</header>
+			<main>
+				<div class="content">
+					<div class="flex flex-wrap">
+						
+							<section class="w-50-ns pr3">
+								<h3 class="mv3 f3 f2-ns">General</h3>
+								
+									<details>
+	<summary class="mv3">Is API Mate open-source?</summary>
+	Yes our Cloudflare Workers app is open-source and daul-licensed under the AGPL v3 and API Mate license. Users on all paid plans are subject to the API Mate license only, not the AGPL. The source code is on github at: <a href="https://github.com/eloff/apimate-workers">https://github.com/eloff/apimate-workers</a>
+</details>
+								
+							</section>
+						
+							<section class="w-50-ns pr3">
+								<h3 class="mv3 f3 f2-ns">Performance &amp; Scaling</h3>
+								
+									<details>
+	<summary class="mv3">How does caching work?</summary>
+	You can enable simple edge caching for a duration in your schema using the <a href="https://www.apollographql.com/docs/apollo-server/performance/caching/">cacheControl directive</a>. It&rsquo;s possible to cache different fields of the same response for different lengths of time.
+</details>
+								
+									<details>
+	<summary class="mv3">How well does API Mate scale?</summary>
+	Because API Mate is built on top of Cloudflare Workers, it scales dynamically across 150+ edge datacenters and can handle massive traffic spikes or regional outages without breaking a sweat. Anycast TCP/IP automatically routes around failures.
+</details>
+								
+									<details>
+	<summary class="mv3">Do you offer an SLA?</summary>
+	Not yet, but contact us about it. Everything degrades gracefully when there&rsquo;s a failure or outage, so the only outages occur when your origin server is down, or all of Cloudflare goes down, which is very rare.
+</details>
+								
+							</section>
+						
+							<section class="w-50-ns pr3">
+								<h3 class="mv3 f3 f2-ns">Billing</h3>
+								
+									<details>
+	<summary class="mv3">Do you have a free trial or a startup version?</summary>
+	We have a free tier with no time limits, we bill based on the volume of queries. Some premium features aren&rsquo;t included in all tiers.
+</details>
+								
+							</section>
+						
+							<section class="w-50-ns pr3">
+								<h3 class="mv3 f3 f2-ns">Logging &amp; Metrics</h3>
+								
+									<details>
+	<summary class="mv3">Can I exclude data from the logs?</summary>
+	You can filter out PII or other sensitive data from the logs by operation or by field.
+</details>
+								
+									<details>
+	<summary class="mv3">Can I delete logs after a time period?</summary>
+	Paid plans have different levels of maximum log retention. You can delete logs after a period of time by configuring custom retention globally or per operation.
+</details>
+								
+							</section>
+						
+							<section class="w-50-ns pr3">
+								<h3 class="mv3 f3 f2-ns">Compatibility</h3>
+								
+									<details>
+	<summary class="mv3">Does API Mate work with Apollo or Relay?</summary>
+	Yes, these are fully supported. In fact API Mate is built on top of Apollo Server.
+</details>
+								
+							</section>
+						
+							<section class="w-50-ns pr3">
+								<h3 class="mv3 f3 f2-ns">How Do I?</h3>
+								
+									<details>
+	<summary class="mv3">How do roles work?</summary>
+	Roles can be stored in your system or ours and associated with a user or API key. Roles can be hierarchial, and each role can be used to grant row, column, and sort permissions, etc. If a user has more than one role involved in a security rule, they get access if any of the rules pass (rules are ORed together.) There’s also the special public role which represents permissions granted to all users, including unauthenticated users. You can create, manage, and assign roles through our GraphQL API.
+</details>
+								
+									<details>
+	<summary class="mv3">What about ABAC (attribute-based access control)?</summary>
+	The security rules system is a superset of both an RBAC and ABAC system. Access can be controlled by roles, by attributes on the user, attributes on the data itself. You can theoretically use any access control paradigm, or mix and match however you please.
+</details>
+								
+									<details>
+	<summary class="mv3">What about capability based security?</summary>
+	Capability-based security is another security paradigm where possession of a capability both designates the resources and grants some kind of permissions to access that resource. Security is achieved by controlling possession. It&rsquo;s particularily powerful when used with crypto-random UUIDs. As with ABAC, you have full freedom to structure your security as you like, so there is nothing preventing you from using a capability based access model.
+</details>
+								
+									<details>
+	<summary class="mv3">What about very complex domain security logic?</summary>
+	What if you want to grant read access to a few specific columns, write access to different columns, and only to manager roles, where their email address ends in acme.com, only on Mondays, and only to rows resources where the created_by field references users which are related to the manager as subordinates? You can implement that with API Mate. In addition to the flexible and powerful column and row based security, you can write and call custom JavaScript functions to your heart’s content. You can implement the most complex of access rules, while keeping all of the logic together in one place, separate from the rest of your code, and easy to audit for correctness.
+</details>
+								
+							</section>
+						
+					</div>
+				</div>
+			</main>
+			<footer class="dark blue-gradient">
+	<div class="content" style="height: 100%">
+		<div class="flex flex-wrap" style="height: 100%">
+			<div class="pv2 mauto w-50-ns f4">
+	<form action="https://formspree.io/dan@closetothemetal.com" method="POST">
+		<a name="contact" class="db overflow-hidden" style="height: 0"></a>
+		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8773cedf67e2755a4ec1eb9ce_92234d2d72" tabindex="-1" value=""></div>
+		<div class="flex w-100 mb2">
+			<textarea class="w-100" rows="4" name="question" placeholder="Contact us, we want to hear from you!"></textarea>
+		</div>
+		<div class="flex w-100">
+			<input class="w-75" type="email" name="_replyto" placeholder="email address" />
+			<button class="ml2 w-25" type="submit">Send</button>
+		</div>
+	</form> 
+</div>
+			<div class="f5 white mt2 flex w-100">
+				<p class="mb1 self-end w-100 tc">Copyright © 2019 API Mate. API Mate is not endorsed or affiliated with Cloudflare or The GraphQL Foundation. All trademarks are property of their respective owners.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+		</div>
+	</body>
+</html>
